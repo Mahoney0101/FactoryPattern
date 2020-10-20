@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Car car = null;
+        Car car;
         CarFactory carFactory = new CarFactory();
         System.out.print("What car do you want? F/H");
 
