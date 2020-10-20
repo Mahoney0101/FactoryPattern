@@ -1,0 +1,30 @@
+@startuml
+skinparam  classAttributeIconSize 0
+
+    abstract class Car {
+    -engineSize:int
+    -colour:Sting
+    +setEngineSize():void
+    +setColour():void
+    +display():void
+    }
+
+    class CarFactory {
+    makeCar(String car):Car
+    }
+
+    class Ford {
+    }
+
+    class Honda {
+    }
+
+    class Main {
+    }
+
+  Ford -up-|> Car
+  Honda -up-|> Car
+  CarFactory --> Car
+
+
+@enduml
